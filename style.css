@@ -30,7 +30,6 @@ body {
   width: 25rem;
   height: 45rem;
   background-color: white;
-  border-radius: 10px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 .head {
@@ -41,7 +40,7 @@ body {
   height: 30%;
   background-color: rgb(176, 196, 255);
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0 0 30px 30px;
 }
 .hr {
   position: absolute;
@@ -50,6 +49,9 @@ body {
   height: 0.3rem;
   background-color: rgba(0, 0, 0, 0.65);
   border-radius: 50px;
+}
+.hr:hover {
+  cursor: s-resize;
 }
 .number_input {
   text-align: right;
@@ -72,31 +74,40 @@ body {
 }
 .row_item,
 .barobar,
-.backspace,
 .clear {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
   outline: none;
   border: none;
+  color: #083787;
   margin: 0 10px;
-  background-color: #e9eafd;
+  background-color: white;
   cursor: pointer;
   font-size: 1.2rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.294);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   transition: all 0.4s;
 }
+.row_item:hover,
+.barobar:hover, 
+.clear:hover {
+  transform: scale(0.90);
+}
 .clear {
+  color: white;
   background-color: rgb(68, 233, 126);
 }
 .backspace {
+  color: white;
   background-color: red;
 }
 .blue {
-  background-color: rgb(176, 196, 255);
+  color: white;
+  background-color: rgb(156, 181, 255);
 }
 .barobar {
-  background-color: #c7b5ff;
+  color: white;
+  background-color: #b59cff;
 }
 .first_row,
 .second_row,
@@ -114,10 +125,12 @@ body {
   right: 30px;
   bottom: 30px;
 }
-.by h1, .by a {
+.by h1,
+.by a {
   text-decoration: none;
   color: black;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
 }
