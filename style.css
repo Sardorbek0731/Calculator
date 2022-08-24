@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url(./bg.img) no-repeat;
+  background-size: cover;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.container {
+  width: 25rem;
+  height: 45rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 30%;
+  background-color: rgb(176, 196, 255);
+  width: 100%;
+  border-radius: 10px;
+}
+.hr {
+  position: absolute;
+  bottom: 10px;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 50px;
+}
+.number_input {
+  text-align: right;
+  outline: none;
+  border-radius: 50px;
+  padding: 0 20px;
+  border: none;
+  width: 20rem;
+  height: 5rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70%;
+  width: 100%;
+}
+.row_item,
+.barobar,
+.backspace,
+.clear {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin: 0 10px;
+  background-color: #e9eafd;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.294);
+  transition: all 0.4s;
+}
+.clear {
+  background-color: rgb(68, 233, 126);
+}
+.backspace {
+  background-color: red;
+}
+.blue {
+  background-color: rgb(176, 196, 255);
+}
+.barobar {
+  background-color: #c7b5ff;
+}
+.first_row,
+.second_row,
+.threeth_row,
+.fourth_row {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 13px;
+  }
+}
+.by {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+.by h1, .by a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}

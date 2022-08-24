@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <form name="container" class="container">
+      <div class="head">
+        <input
+          type="text"
+          class="number_input"
+          id="numberInput"
+          placeholder="0"
+        />
+        <div class="hr"></div>
+      </div>
+      <div class="body">
+        <div class="first_row">
+          <input type="button" value="AC" class="clear" id="clear"/>
+          <input
+            type="button"
+            value="%"
+            class="row_item blue"
+          />
+          <input
+            type="button"
+            value="/"
+            class="row_item blue"
+          />
+          <input
+            type="button"
+            value="*"
+            class="row_item blue"
+          />
+        </div>
+        <div class="second_row">
+          <input
+            type="button"
+            value="7"
+            class="row_item"
+          />
+          <input
+            type="button"
+            value="8"
+            class="row_item"
+          />
+          <input
+            type="button"
+            value="9"
+            class="row_item"
+          />
+          <input
+            type="button"
+            value="-"
+            class="row_item blue"
+          />
+        </div>
+        <div class="threeth_row">
+          <input
+            type="button"
+            value="4"
+            class="row_item"
+          />
+          <input
+            type="button"
+            value="5"
+            class="row_item"
+          />
+          <input
+            type="button"
+            value="6"
+            class="row_item"
+          />
+          <input
+            type="button"
+            value="+"
+            class="row_item blue"
+          />
+        </div>
+        <div class="fourth_row">
+          <input
+            type="button"
+            value="1"
+            class="row_item"
+          />
+          <input
+            type="button"
+            value="2"
+            class="row_item"
+          />
+          <input
+            type="button"
+            value="3"
+            class="row_item"
+          />
+          <input
+            type="button"
+            value="("
+            class="row_item blue"
+          />
+        </div>
+        <div class="fiveth_row">
+          <input
+            type="button"
+            value="."
+            class="row_item barobar"
+            id="barobar"
+          />
+          <input
+            type="button"
+            value="0"
+            class="row_item"
+          />
+          <input
+            type="button"
+            value="="
+            class="barobar"
+            onclick="container.numberInput.value = eval(container.numberInput.value)"
+          />
+          <input
+            type="button"
+            value=")"
+            class="row_item blue"
+          />
+        </div>
+      </div>
+    </form>
+    <div class="by">
+      <h1>
+        Created by
+        <a href="#">Sardorbek Olimov</a>
+      </h1>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
